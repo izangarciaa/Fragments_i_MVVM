@@ -7,10 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:padding="10dp">
-       <FrameLayout
-           android:id="@+id/FL_ContingutFragments"
-           android:layout_width="match_parent"
-           android:layout_height="400dp"/>
+
+    <FrameLayout
+        android:id="@+id/FL_ContingutFragments"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+    <TextView
+        android:id="@+id/TV_DadesCompartides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dades compartides"
+        android:layout_below="@+id/FL_ContingutFragments"
+        android:background="#DDD"
+        android:textSize="18sp"
+        android:padding="20dp"/>
 
         <Button
             android:id="@+id/BTN_Fragment1"
@@ -18,11 +28,12 @@
             android:layout_height="wrap_content"
             android:text="Fragment 1"
             android:layout_alignParentBottom="true"/>
-        <Button
-            android:id="@+id/BTN_Fragment2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fragment 2"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/BTN_Fragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Fragment 2" />
     </RelativeLayout>
